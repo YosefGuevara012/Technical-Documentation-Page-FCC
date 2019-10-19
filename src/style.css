@@ -6,7 +6,7 @@ body {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 250px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -21,7 +21,7 @@ body {
 }
  
 .sidebar a.active {
-  background-color: #4CAF50;
+  background-color: #0690c0;
   color: white;
 }
 
@@ -30,8 +30,8 @@ body {
   color: white;
 }
 
-div.content {
-  margin-left: 200px;
+main {
+  margin-left: 250px;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -51,4 +51,10 @@ div.content {
     text-align: center;
     float: none;
   }
+}
+
+/* content CSS */
+
+header{
+  text-align:center;
 }

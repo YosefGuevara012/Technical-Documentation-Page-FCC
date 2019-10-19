@@ -1,15 +1,96 @@
-<secition id="main">
+<secition>
+<nav class="sidebar"  id="navbar">
+  <!-- The  code from sidebar was taked from W3Schools-->
+  <a class="active" href="#home"><header><b>GNU Octave</b></header></a>
+  <a href="#¿Que_es_Octave?" class="nav-link">¿Que es Octave?</a>
+  <a href="#¿Donde_conseguirlo?" class="nav-link">¿Donde conseguirlo?</a>
+  <a href="#Crear_una_matriz" class="nav-link">Crear una matriz</a>
+  <a href="#Operaciones_con_matrices" class="nav-link">Operaciones con matrices</a>
+  <a href="#Crear_un_gráfico" class="nav-link">Crear un gráfico</a>
+  <a href="#Disclaimer" class="nav-link">Disclaimer</a>
+</nav>
+<main id="main-doc" class="content">
+  <section id="¿Que_es_Octave?" class="main-section">
+    <header><h2>¿Que es Octave?</h2></header>
+    <article clas="article-content">
+      <p>GNU Octave es un lenguaje de alto nivel, destinado              principalmente a cálculos numéricos. Proporciona una            interfaz de línea de comandos conveniente para                  resolver problemas lineales y no lineales                      numéricamente, y para realizar otros experimentos              numéricos utilizando un lenguaje que es principalmente          compatible con Matlab. También se puede usar como un            lenguaje orientado a lotes.
+      </p>
 
-<div class="sidebar">
-  <!-- The native code from sidebar was taking from W3Schools-->
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+      <p>Octave tiene amplias herramientas para resolver                problemas comunes de álgebra lineal numérica,                  encontrar las raíces de ecuaciones no lineales,                integrar funciones ordinarias, manipular polinomios e          integrar ecuaciones diferenciales y algebraicas                diferenciales ordinarias. Es fácilmente extensible y            personalizable a través de funciones definidas por el          usuario escritas en el propio lenguaje de Octave, o            utilizando módulos cargados dinámicamente escritos en          C ++, C, Fortran u otros idiomas.
+      </p>
 
-<div class="content">
-  <h2>Aquí va en contenido</h2>
-</div>
+</article>
+  </section>
+  <section id="¿Donde_conseguirlo?" class="main-section">
+    <header><h2>¿Donde conseguirlo?</h2></header>
+    <p>Octave es software libre. Esto significa que todos son          libres de usarlo y redistribuirlo bajo ciertas                  condiciones. Sin embargo, Octave no es de dominio              público. Tiene derechos de autor y existen restricciones        en su distribución, pero las restricciones están                diseñadas para garantizar que otros tengan la misma            libertad para usar y redistribuir Octave que usted              tiene. Las condiciones precisas se pueden encontrar en          la Licencia Pública General de GNU que viene con Octave        y que también aparece en <a href="https://octave.org/doc/interpreter/Copying.html">copia</a>.
+   </p>
+   <p>Las distribuciones individuales proporcionan versiones         ejecutables de GNU Octave para sistemas GNU/Linux. Las         distribuciones conocidas para empaquetar Octave incluyen       Debian, Ubuntu, Fedora, Gentoo y openSUSE. Estos paquetes       son creados por voluntarios. El retraso entre un               lanzamiento de origen de Octave y la disponibilidad de un       paquete para una distribución particular de GNU/Linux           varía. 
+   </p>
+   <p>Para descargar una copia de Octave, visite               
+      <a href="https://www.octave.org/download.html">aquí</a>
+   </p>
+  </section>
+  <section id="Crear_una_matriz" class="main-section">
+    <header><h2>Crear una matriz</h2></header>
+    <p>Los vectores y las matrices son los bloques de                  construcción básicos para el análisis numérico. Para            crear una nueva matriz y almacenarla en una variable            para que pueda consultarla más tarde.
+    </p>
+    <code>
+      <ol>
+        <li>A = [1,2,3,4; 5,6,7,8]: Matriz 2x4 </li>
+        <li>zeros(n): Matriz nxn de zeros</li>
+        <li>eye(n): Matriz idententidad nxn</li>
+        <li>inv(A): Inversa Matriz A</li>
+        <li>det(A): Determinante Matriz A </li>
+      </ol>    
+    </code>
+    <p>Octave responderá imprimiendo la matriz en columnas            perfectamente alineadas. Octave usa una coma o un              espacio para separar las entradas en una fila, y un            punto y coma o un retorno de carro para separar una fila        de la siguiente. Finalizar un comando con un punto y            coma le dice a Octave que no imprima el resultado del          comando.</p>
+  </section>
+  <section id="Operaciones_con_matrices"class="main-section">
+    <header><h2>Operaciones con matrices</h2></header>
+    <p>Octave tiene una notación de operador              conveniente para realizar aritmética de            matrices. Por ejemplo, para multiplicar la        matriz A por un valor escalar.
+    </p>
+    <code>
+      2 * A
+    </code>
+    <p>
+      Para multiplicar las dos matrices A y B.
+    </p>
+    <code>
+      A * B
+    </code>
+    <p>
+      Para formar la matriz de transposición del         producto (A) * A.
+    </p>
+    <code>
+      A' * A
+    </code>
+  </section>
+  <section id="Crear_un_gráfico"class="main-section">
+    <header><h2>Crear un gráfico</h2></header>
+    <p>
+     Para mostrar gráficamente la solución del          ejemplo anterior, use el comando:
+    </p>
+    <code>
+      plot (t, x)
+    </code>
+    <p>Si está utilizando una interfaz gráfica de usuario, Octave creará automáticamente una ventana separada para mostrar el gráfico.<br>
 
+Para guardar un diagrama una vez que se ha mostrado en la pantalla, use el comando de impresión. Por ejemplo:</p>
+    <code> print -dpdf foo.pdf</code>
+    <p>
+      Creará un archivo llamado foo.pdf que             contiene una representación de la trama           actual en formato de documento portátil. El       comando
+    </p>
+    <code>help print</code>
+    <p>
+      Explica más opciones para el comando de           impresión y proporciona una lista de               formatos de archivo de salida adicionales.
+    </p>
+  </section>
+  <section id="Disclaimer" class="main-section">
+    <header><h2>Disclaimer<h2></header>
+    <p>
+      Este es un proyecto de de documentación tecnica para           FreeCodeCamp, toda la información referente al contenida       en esta web fue tomada y adaptada al español de la pagina       oficial de <a href="https://octave.org/doc/v4.0.1/">Octave</a>.
+    </p>
+  </section>
+</main>
 </secition>
