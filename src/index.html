@@ -1,4 +1,4 @@
-<secition>
+<body>
 <nav class="sidebar"  id="navbar">
   <!-- The  code from sidebar was taked from W3Schools-->
   <a class="active" href="#home"><header><b>GNU Octave</b></header></a>
@@ -35,7 +35,8 @@
     <header><h2>Crear una matriz</h2></header>
     <p>Los vectores y las matrices son los bloques de                  construcción básicos para el análisis numérico. Para            crear una nueva matriz y almacenarla en una variable            para que pueda consultarla más tarde.
     </p>
-    <code>
+    <div id="basic-code">
+      <code>
       <ol>
         <li>A = [1,2,3,4; 5,6,7,8]: Matriz 2x4 </li>
         <li>zeros(n): Matriz nxn de zeros</li>
@@ -44,44 +45,47 @@
         <li>det(A): Determinante Matriz A </li>
       </ol>    
     </code>
+      
+    </div>
     <p>Octave responderá imprimiendo la matriz en columnas            perfectamente alineadas. Octave usa una coma o un              espacio para separar las entradas en una fila, y un            punto y coma o un retorno de carro para separar una fila        de la siguiente. Finalizar un comando con un punto y            coma le dice a Octave que no imprima el resultado del          comando.</p>
   </section>
   <section id="Operaciones_con_matrices"class="main-section">
     <header><h2>Operaciones con matrices</h2></header>
     <p>Octave tiene una notación de operador              conveniente para realizar aritmética de            matrices. Por ejemplo, para multiplicar la        matriz A por un valor escalar.
     </p>
-    <code>
-      2 * A
-    </code>
+    <div class="simple-code">
+      <code >2 * A</code>
+    </div>
     <p>
       Para multiplicar las dos matrices A y B.
     </p>
-    <code>
-      A * B
-    </code>
+    <div class="simple-code">
+      <code> A * B </code>
+    </div>
     <p>
       Para formar la matriz de transposición del         producto (A) * A.
     </p>
-    <code>
-      A' * A
-    </code>
+    <div class="simple-code">
+      <code> A' * A </code>
+    </div>
+
   </section>
   <section id="Crear_un_gráfico"class="main-section">
     <header><h2>Crear un gráfico</h2></header>
     <p>
      Para mostrar gráficamente la solución del          ejemplo anterior, use el comando:
     </p>
-    <code>
+    <code class="simple-code">
       plot (t, x)
     </code>
     <p>Si está utilizando una interfaz gráfica de usuario, Octave creará automáticamente una ventana separada para mostrar el gráfico.<br>
 
 Para guardar un diagrama una vez que se ha mostrado en la pantalla, use el comando de impresión. Por ejemplo:</p>
-    <code> print -dpdf foo.pdf</code>
+    <code class="simple-code"> print -dpdf foo.pdf</code>
     <p>
       Creará un archivo llamado foo.pdf que             contiene una representación de la trama           actual en formato de documento portátil. El       comando
     </p>
-    <code>help print</code>
+    <code class="simple-code" >help print</code>
     <p>
       Explica más opciones para el comando de           impresión y proporciona una lista de               formatos de archivo de salida adicionales.
     </p>
@@ -89,8 +93,9 @@ Para guardar un diagrama una vez que se ha mostrado en la pantalla, use el coman
   <section id="Disclaimer" class="main-section">
     <header><h2>Disclaimer<h2></header>
     <p>
-      Este es un proyecto de de documentación tecnica para           FreeCodeCamp, toda la información referente al contenida       en esta web fue tomada y adaptada al español de la pagina       oficial de <a href="https://octave.org/doc/v4.0.1/">Octave</a>.
+      Este es un proyecto de de documentación tecnica para           FreeCodeCamp, toda la información referente al contenida       en esta web fue tomada y adaptada al español de la pagina       oficial de <a href="https://octave.org/doc/v4.0.1/">Octave</a>, este es un proyecto netamente educativo.
     </p>
   </section>
+  <footer> 2019</footer>
 </main>
-</secition>
+</body>
